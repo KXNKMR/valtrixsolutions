@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* common class */
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/* navbar */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 24px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    /* border-bottom: 3px solid #FF6D1F; */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.hhh {
+    list-style: none;
+    display: none;
+}
+
+.hhh li {
+    margin-bottom: 20px;
+}
+
+.l-items {
+    display: flex;
+    justify-self: start;
+    gap: 20px;
+}
+
+.logo {
+    position: fixed;
+    justify-self: center;
+}
+
+.r-items {
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar a:hover {
+    color: #FF6D1F;
+    text-decoration: 2px solid #FF6D1F underline;
+}
+
+/* home section */
+#home {
+    width: 100%;
+    height: 100%;
+    background-image: url(./2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.441);
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home h1 {
+    font-size: 6rem;
+    letter-spacing: 30px;
+    margin-bottom: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box p {
+    margin-top: 0%;
+    font-size: 2.5rem;
+    text-align: center;
+    word-spacing: 30px;
+}
+.hlinks a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 20px;
+    color: white;
+    /* background-color: white; */
+}
+
+/* about */
+#about {
+    /* background-color: #faf3e17a; */
+}
+
+.about h2 {
+    font-size: 4rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.bio {
+    display: flex;
+}
+
+.bio img {
+    /* margin-top: 10px; */
+    width: 400px;
+    height: 400px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dcard {
+    text-align: center;
+}
+
+.dcard h2 {
+    margin-bottom: 0;
+}
+
+.dcard p {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* service */
+.title h2 {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 4rem;
+    padding: 30px;
+}
+
+#services h3 {
+    font-size: 2rem;
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.s-card {
+    margin: 5px;
+    width: 100%;
+    height: 200px;
+    box-shadow: 8px 6px 5px rgba(0, 0, 0, 0.388);
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.s-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content .txt2 {
+    font-weight: bold;
+}
+
+.card-content h4 {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.card-content p {
+    margin-top: 3%;
+    text-align: left;
+    /* text-transform: uppercase; */
+    word-break: break-all;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.link-s {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.link-s a {
+    text-decoration: none;
+    color:slateblue;
+    cursor: pointer;
+}
+
+/* why choose us */
+.choose {
+    margin-top: 20px;
+    background-color: #FF6D1F;
+}
+
+.video {
+    display: flex;
+    gap: 10px;
+}
+
+.video p {
+    padding: 20px;
+    text-align: center;
+}
+
+.video video {
+    width: 800px;
+    height: 500px;
+}
+
+.industries {
+    margin-bottom: 30px;
+}
+.industries img{
+    width: 120px;
+    height: 120px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.industries p {
+    width: 40%;
+}
+
+.blocks .txt {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.il-card{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.ir-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* justify-content: end; */
+    gap: 20px;
+    text-align: right;
+}
+
+/* brands */
+.client h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.brands img {
+    width: 100px;
+    height: 100px;
+}
+
+/* reviews */
+.review {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.comment {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    border: 2px solid white;
+}
+
+.comment p {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-align: center; */
+}
+
+/* contact */
+#contact {
+    background-color: black;
+    color: white;
+
+}
+
+.foot {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.foot .footer-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.foot .footer-content h1 {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.foot .footer-content p {
+    color:#555;
+}
+
+.foot .footer-content .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foot .footer-content .links a{
+    color: slateblue;
+    text-decoration: none;
+    cursor: pointer;
+    /* border: 2px solid slateblue; */
+    /* width: 25px; */
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+}
+
+.foot .footer-content .links p {
+    margin-left: 10%;
+    text-align: left;
+    transition: all 0.5s ease-in;
+}
+
+.foot .footer-content .links a:hover {
+    /* background-color: slateblue; */
+    color:#fff;
+}
+
+.foot .footer-content .links p:hover {
+    /* background-color: slateblue; */
+    color:#fff;
+}
